@@ -4,7 +4,7 @@
 
 a=list(input().upper())
 result=[]
-
+check2=0
 
 for i in range(len(a)):
     check="false"
@@ -20,3 +20,13 @@ for i in range(len(a)):
         result.append([a[i],1])
 print(result)
 
+max_item=max(result,key=lambda x:x[1])
+result.remove(max_item)
+
+for i in result:
+    if result[1] == max_item[1]:
+        print("?")
+        check2=1
+        break
+if check2 ==0:
+    print(max_item[0])
