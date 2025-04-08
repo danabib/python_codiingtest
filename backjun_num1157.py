@@ -18,13 +18,12 @@ for i in range(len(a)):
         
     if check=="false":
         result.append([a[i],1])
-print(result)
 
 max_item=max(result,key=lambda x:x[1])
 result.remove(max_item)
 
 for i in result:
-    if result[1] == max_item[1]:
+    if i[1] == max_item[1]:
         print("?")
         check2=1
         break

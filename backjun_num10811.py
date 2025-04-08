@@ -15,7 +15,6 @@
 
 m,n=map(int,input().split())
 basket=list(range(1,m+1))
-print(*basket)
 for _ in range(n):
     i,j=map(int,input().split())
     basket[i-1:j]=basket[i-1:j][::-1]

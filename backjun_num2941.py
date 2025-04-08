@@ -18,14 +18,12 @@ for i in c:
     if len(q)==4:
         q.popleft()
         count+=1
-        print(q)
     if len(q)>=2:
         for j in check:
             if j==''.join(q)[:2]:
                 q.popleft()
                 q.popleft()
                 count+=1
-        print(q)
     if len(q)>=3:
         for j in check:
             if j==''.join(q):
@@ -33,6 +31,5 @@ for i in c:
                 q.popleft()
                 q.popleft()
                 count+=1
-                print(q)
 count+=len(q)
 print(count)
