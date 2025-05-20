@@ -62,10 +62,10 @@ def 문제(남은사람수, 최소테이블사이즈):
 print(문제(전체사람의수, 앉힐수있는최소사람수))'''
 
 
-#5-3 1번 문제
-'''numbers=[1,2,3,4,5,6]
+'''#5-3 1번 문제
+numbers=[1,2,3,4,5,6]
 print("::".join(str(i) for i in numbers))'''
-
+'''
 #5-3 2번 문제
 numbers=list(range(1,10+1))
 
@@ -79,4 +79,48 @@ print()
 
 print("#제곱해서 50미만 추출하기")  
 print(list(filter(lambda x: x**2<50,numbers)))
+'''
+
+'''try:
+    number_input_a=int(input("정수입력?"))
+    print("원의 반지름:",number_input_a)
+    print("원의 둘레:",2*3.14*number_input_a)
+    print("원의 넓이:",3.14*number_input_a*number_input_a)
+except:
+    print("정수를 입력하지 않았습니다.")
+else:
+    print("예외가 발생하지 않았습니다.")
+finally:
+    print("일단 프로그램이 어떻게든 끝났습니다.")'''
+
+''''#6-1 1) 예제
+numbers=[52,273,32,103,90,10,275]
+
+print("#(1) 요소 내부에 있는 값 찾기")
+print("- {}는 {} 위치에 있습니다.".format(52,numbers.index(52)))
+print() 
+
+print("#(2)요소 내부에 없는 값 찾기")
+number=1000
+try:
+    print("- {}는 {} 위치에 있습니다.".format(52,numbers.index(number)))
+except:
+    print("-리스트 내부에 없는 값입니다.")
+print()
+
+print("-----정상적으로 종료되었습니다.-----")'''
+
+'''# 7-1 1)
+import os
+
+def read_folder(path):
+    output=os.listdir(".")
+    for item in output:
+        if os.path.isdir(path):
+            read_folder(path+"/"+item)
+        else:
+            print("파일:",item)
+
+read_folder(".")'''
+
 
