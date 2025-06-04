@@ -4,8 +4,14 @@
 예를 들면, 13까지는 3개, 58까지는 5개를 지난다.'''
 
 n=int(input())
+check=1
 
-check=n-1
+for i in range(1,n+1):
+    if n<=check:
+        print(i)
+        break
 
-print(check//6)
-print((check//6)+1)
+    check+=(6*i)
+
+
+

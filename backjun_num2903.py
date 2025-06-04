@@ -35,6 +35,5 @@ first=1
 
 for i in range(1,n+1):
     first*=2
-    print(first)
 
 print((first+1)**2)
